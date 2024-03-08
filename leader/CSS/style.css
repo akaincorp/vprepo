@@ -1,0 +1,167 @@
+body {
+  font-family: "Gill Sans", sans-serif;
+}
+
+
+.popupformagent {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: 999;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.addagent {
+position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  width: 35%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.addagent input {
+  padding: 5px;
+  width: 86%;
+}
+
+.addagent h2 {
+  position: absolute;
+  bottom: 285px;
+}
+
+.addagent button {
+  position: absolute;
+    bottom: 31px;
+    right: 7%;
+    padding: 8px 30px;
+    border-radius: 6px;
+    background-color: blue;
+    color: white;
+}
+
+.editagent {
+position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  width: 35%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  left: 32%;
+  bottom: 27%;
+}
+
+.editagent input {
+  padding: 5px;
+  width: 86%;
+}
+
+.editagent h2 {
+  position: absolute;
+  bottom: 285px;
+}
+
+.editagent button {
+  position: absolute;
+    bottom: 31px;
+    right: 7%;
+    padding: 8px 30px;
+    border-radius: 6px;
+    background-color: blue;
+    color: white;
+}
+
+.labelusername {
+  position: absolute;
+  left: 7%;
+  top: 85px;
+}
+
+.labelpassword {
+  position: absolute;
+  left: 7%;
+  top: 170px;
+}
+
+.topcontent {
+  position: relative;
+  left: 30px;
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.topcontent input {
+  width: 122px;
+  height: 28px;
+  position: relative;
+  top: 3px;
+}
+
+.topcontent label {
+  font-size: 1vw;
+  position: relative;
+  top: 7px;
+}
+
+.content-container {
+  position: relative;
+  top: 88px;
+}
+
+.topcontent button {
+  color: #000000cf;
+  background-color: white;
+  border: none;
+  padding: 3px 3px;
+  margin: 5px;
+}
+
+.table2 {
+  color: #000000cf;
+    border: #5f78ffcf 2px;
+    width: 97%;
+    font-size: 10px;
+    position: relative;
+    border-collapse: collapse;
+    left: 16px;
+    border-spacing: 0;
+    font-weight: bold;
+}
+
+.table2 th {
+  padding: 9px 5px;
+  font-size: 9px;
+  color: black;
+  text-align: left;
+  border-bottom: 1px solid #00000045;
+}
+
+.table2 tr {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.table2 td {
+  padding: 4px 5px;
+  background : linear-gradient(#0000000d 1%, white 10%);
+  text-align: left;
+  color: black;
+  font-weight: 500;
+  border-bottom: 1px solid #00000045;
+}
+

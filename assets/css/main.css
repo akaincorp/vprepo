@@ -1,0 +1,138 @@
+
+.callcontrol {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 430px;
+  height: 100px;
+  background-color: rgb(215 215 215);
+  border-radius: 5px;
+}
+
+.callcontrol input {
+  background-color: rgb(249 249 249);
+    border: none;
+    position: relative;
+    right: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 115px;
+    width: 230px;
+}
+
+#expert {
+  background-color: rgb(215 215 215);
+    border-radius: 5px;
+    width: 540px;
+    padding: 31px;
+}
+
+#expert input {
+  border-radius: 5px;
+}
+
+.buttondown {
+  color: white;background: blue;border-radius: 5px;border: 1px solid #0000000d;
+}
+
+.buttondown:disabled {
+ background-color: rgb(184, 184, 245);
+}
+
+.btndowncall {
+  margin-top: 10px;margin-left: 151px;color: white;background: blue;border-radius: 5px;border: 1px solid #0000000d;
+}
+
+.btndowncall:disabled {
+  background-color: rgb(184, 184, 245);
+}
+
+#btnRegister {
+  color: white;
+  background: #02a902;
+  border-radius: 5px;
+  border: 1px solid #0000000d;
+}
+
+#btnRegister:disabled {
+  background: #02a9026b;
+}
+
+#btnSetting {
+  color: white;
+  background: #02a902;
+  border-radius: 5px;
+  border: 1px solid #0000000d;
+}
+
+#btnSetting:disabled {
+  background: #02a9026b;
+}
+
+#btnSave {
+  color: white;
+  background: #02a902;
+  border-radius: 5px;
+  border: 1px solid #0000000d;
+}
+
+#btnSettingClose {
+  color: white;
+  background: rgb(221, 31, 31);
+  border-radius: 5px;
+  border: 1px solid #0000000d;
+}
+
+#clearLocalStorageButton {
+  color: white;
+  background: rgb(221, 31, 31);
+  border-radius: 5px;
+  border: 1px solid #0000000d;
+}
+
+
+#btnUnRegister {
+  color: white;
+  background: rgb(221, 31, 31);
+  border-radius: 5px;
+  border: 1px solid #0000000d;
+}
+
+#btnUnRegister:disabled {
+  background: rgba(255, 1, 1, 0.185);
+}
+
+#timer {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+
+.glass-panel {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  background-color: Gray;
+}
+
+.div-keypad {
+  z-index: 100;
+  position: fixed;
+  transition-property: left top;
+  -moz-transition-property: left top;
+  -o-transition-property: left top;
+  transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+}

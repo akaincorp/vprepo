@@ -1,0 +1,440 @@
+body {
+  font-family: "Gill Sans", sans-serif;
+}
+
+.container{
+  padding:8px;
+  height: 485px;overflow:auto;
+  width: 390px;
+  resize: horizontal;
+  display: none;
+  box-shadow: -2px 0 1px rgba(0, 0, 0, 0.822), 2px 0 1px rgba(0, 0, 0, 0.822), 0 -2px 1px rgba(0, 0, 0, 0.829), 0 2px 1px rgba(0, 0, 0, 0.829);
+}
+
+.item{
+  width: 390px;
+  height: 60px;
+  margin:10px;
+  color:black;
+}
+
+
+.selectscript {
+  position: relative;
+  bottom: 195px;
+  left: 935px;
+}
+
+.buttonscript {
+  width: 390px;
+  background-color: rgba(68, 83, 168, 255);
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.buttonscript:active {
+  background-color: #1b04e4;
+}
+
+.dropscript {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.dropscript button {
+  width: 390px;
+}
+
+.container-notification {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: #00000065;
+}
+
+.notification-success {
+  background-color: rgb(161, 204, 253);
+  border-radius: 5px;
+  width: 21%;
+  height: 25%;
+  box-shadow: 3px 3px 8px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  right: 40%;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background: red;
+  width: 3%;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  right: 38%;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.content{
+  position: relative;
+}
+
+.content-top {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+  width: 95%;
+  height: 50%;
+  background-color: white;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid rgba(99, 99, 99, 0.562);
+}
+
+.content-down {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+  width: 95%;
+  height: 26%;
+  background-color: rgb(235, 234, 234);
+  border-right: 1px solid black;
+  border-left: 1px solid rgba(99, 99, 99, 0.562);
+  border-bottom: 1px solid black;
+
+}
+
+.content-down button {
+  width: 30%;
+  height: 60%;
+  margin-left: 67%;
+  box-shadow: 1px 1px 0px 1px;
+}
+
+
+
+.popupstatus {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popupstatus-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 90px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 345px;
+}
+
+.popupstatus-content p {
+  position: relative;
+  bottom: 70px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.close-btnstatus {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.formstatus {
+  position: relative;
+  right: 76px;
+  height: 90px;
+  width: 90px;
+}
+
+.formstatus label {
+  position: relative;
+  bottom: 60px;
+}
+
+.formstatus input[type="text"] {
+  position: relative;
+  bottom: 40px;
+  width: 316px;
+  height: 108px;
+  padding: 11px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.buttonstatus {
+  border-radius: 5px;
+  color: #5f78ffcf;
+  background-color: white;
+  border: 2px solid #5f78ffcf;
+  padding: 8px 9px;
+  position: relative;
+  left: 222px;
+  bottom: 14px;
+  transition: all 0.2s;
+}
+
+.buttonstatus:hover {
+  background-color: #5f78ffcf;
+  color: white;
+}
+
+.popupstatus1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popupstatus-content1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 90px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 345px;
+}
+
+.popupstatus-content1 p {
+  position: relative;
+  bottom: 70px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.close-btnstatus1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.formstatus1 {
+  position: relative;
+  right: 76px;
+  height: 90px;
+  width: 90px;
+}
+
+.formstatus1 label {
+  position: relative;
+  bottom: 60px;
+}
+
+.formstatus1 input[type="text"] {
+  position: relative;
+  bottom: 40px;
+  width: 316px;
+  height: 108px;
+  padding: 11px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.buttonstatus1 {
+  border-radius: 5px;
+  color: #5f78ffcf;
+  background-color: white;
+  border: 2px solid #5f78ffcf;
+  padding: 8px 9px;
+  position: relative;
+  left: 222px;
+  bottom: 14px;
+  transition: all 0.2s;
+}
+
+.buttonstatus1:hover {
+  background-color: #5f78ffcf;
+  color: white;
+}
+
+.popupstatus2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popupstatus-content2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 90px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 345px;
+}
+
+.popupstatus-content2 p {
+  position: relative;
+  bottom: 70px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.close-btnstatus2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.formstatus2 {
+  position: relative;
+  right: 76px;
+  height: 90px;
+  width: 90px;
+}
+
+.formstatus2 label {
+  position: relative;
+  bottom: 60px;
+}
+
+.formstatus2 input[type="text"] {
+  position: relative;
+  bottom: 40px;
+  width: 316px;
+  height: 108px;
+  padding: 11px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.buttonstatus2 {
+  border-radius: 5px;
+  color: #5f78ffcf;
+  background-color: white;
+  border: 2px solid #5f78ffcf;
+  padding: 8px 9px;
+  position: relative;
+  left: 222px;
+  bottom: 14px;
+  transition: all 0.2s;
+}
+
+.buttonstatus2:hover {
+  background-color: #5f78ffcf;
+  color: white;
+}
+
+.popupstatus3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popupstatus-content3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 90px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 345px;
+}
+
+.popupstatus-content3 p {
+  position: relative;
+  bottom: 70px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.close-btnstatus3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.formstatus3 {
+  position: relative;
+  right: 76px;
+  height: 90px;
+  width: 90px;
+}
+
+.formstatus3 label {
+  position: relative;
+  bottom: 60px;
+}
+
+.formstatus3 input[type="text"] {
+  position: relative;
+  bottom: 40px;
+  width: 316px;
+  height: 108px;
+  padding: 11px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.inputmodalfield::placeholder {
+  color: red;
+}
+
+.buttonstatus3 {
+  border-radius: 5px;
+  color: #5f78ffcf;
+  background-color: white;
+  border: 2px solid #5f78ffcf;
+  padding: 8px 9px;
+  position: relative;
+  left: 222px;
+  bottom: 14px;
+  transition: all 0.2s;
+}
+
+.buttonstatus3:hover {
+  background-color: #5f78ffcf;
+  color: white;
+}

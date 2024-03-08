@@ -1,0 +1,109 @@
+body {
+  font-family: "Gill Sans", sans-serif;
+}
+
+.boxhandle {
+  position: relative;
+  left: 300px;
+  top: 80px;
+  width: 650px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -5px 0 1px rgba(0, 0, 0, 0.822), 6px 0 1px rgba(0, 0, 0, 0.822), 0 -2px 1px rgba(0, 0, 0, 0.829), 0 2px 1px rgba(0, 0, 0, 0.829);
+}
+
+.tb1 {
+  color: white;
+  border: 1px solid black;
+  border-collapse: collapse;
+  position: relative;
+  bottom: 10px;
+  width: 560px;
+  right: 20px;
+}
+
+.tb1 th {
+  padding: 5px 10px;
+  background: #c5c5c5cf;
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tb1 tr {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.tb1 td {
+  padding: 2px 4px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.persegi {
+  height: 35px;
+  width: 400px;
+  color: white;
+  background: linear-gradient(to right, #627fff, #1302ad);
+  border-radius: 0px 20px 20px 0px;
+  position: initial;
+  font-weight: 700;
+  align-items: center;
+  text-align: left;
+  display: flex;
+  font-size: 13px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.bacper {
+  background: linear-gradient(to right, #7c7c7c, #ffffff);
+  position: relative;
+  right: 60px;
+  top: 10px;
+  height: 35px;
+  width: 550px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.containertop {
+  display: flexbox;
+  position: relative;
+  bottom: 23px;
+  left: 20px;
+}
+
+.ordertime {
+  position: relative;
+  left: 254px;
+  bottom: 27px;
+  font-size: 13px;
+}
+
+.handling {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.groups {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 235px;
+}
+
+.ordernumber {
+  display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    left: -265px;
+}

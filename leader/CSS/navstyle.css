@@ -1,0 +1,314 @@
+/* Google Font Import - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.navtop {
+  background: linear-gradient(180deg, rgb(167 172 169),rgba(202,204,203,255));
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  z-index: 80;
+}
+
+.logo {
+  position: absolute;
+  left: 2%;
+  top: 9%;
+}
+
+.logo img {
+  width: 45px;
+  height: 34px;
+}
+
+.navtop-content {
+  background: white;
+  width: 350px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.agent {
+  bottom: 10px;
+  right: 25px;
+  position: relative;
+}
+
+.agent img {
+  width: 20px;
+  height: 22px;
+  position: relative;
+  right: 40px;
+  top: 22px;
+}
+
+.agent h5 {
+  font-size: 12px;
+  position: relative;
+  right: 10px;
+  bottom: 4px;
+}
+
+.idr {
+  bottom: 10px;
+  right: 28px;
+  position: relative;
+}
+
+.idr img {
+  width: 20px;
+  height: 22px;
+  position: relative;
+  right: 8px;
+  top: 22px;
+}
+
+.idr h5 {
+  font-size: 12px;
+  position: relative;
+  left: 18px;
+  bottom: 5px;
+}
+
+.statistic {
+  bottom: 10px;
+  left: 20px;
+  position: relative;
+}
+
+.statistic img {
+  width: 20px;
+  height: 22px;
+  position: relative;
+  right: 23px;
+  top: 22px;
+}
+
+.statistic h5 {
+  font-size: 12px;
+  position: relative;
+  left: 5px;
+  bottom: 4px;
+}
+
+.office {
+  bottom: 10px;
+  left: 50px;
+  position: relative;
+}
+
+.office img {
+  width: 20px;
+  height: 22px;
+  position: relative;
+  right: 20px;
+  top: 21px;
+}
+
+.office h5 {
+  font-size: 12px;
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
+
+.dropdown-container {
+  position: absolute;
+  width: 75px;
+  height: 26px;
+  top: 21%;
+  right: 19%;
+}
+
+.dropdown-toggle {
+  width: 115%;
+    height: 115%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dropdown-list {
+  display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    background-color: #f9f9f9;
+    padding: 5px 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-list1 {
+  display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 104px;
+    font-size: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    left: 87px;
+    top: 29px;
+    height: 184px;
+    overflow-y: hidden;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown {
+  display: none; /* Sembunyikan dropdown secara default */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS untuk tautan dropdown */
+.dropdown a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Saat hover pada elemen parent, tampilkan dropdown */
+.dropdown:hover {
+  display: block;
+}
+
+.opstatus {
+  position: relative;
+  bottom: 200px;
+  z-index: 9999;
+  display: none;
+}
+
+.clock {
+  width: 221px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  cursor: default;
+  color: white;
+  top: 11px;
+  font-size: 13px;
+  left: 474px;
+}
+
+#clock {
+  width: 100%;
+}
+
+.signal {
+  position: absolute;
+  top: 6px;
+  right: 9%;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textsignal {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.imgsignal {
+  width: 60px;
+  height: 35px;
+}
+
+.signout {
+  width: 5%;
+  height: 70%;
+  position: absolute;
+  right: 4%;
+  top: 12%;
+}
+
+.signout button {
+  width: 100px;
+    height: 100%;
+    border: none;
+    color: red;
+    box-shadow: 0px 2px 2px -1px;
+    font-weight: 700;
+    background-color: rgb(204, 199, 199);
+}
+
+.version {
+  color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 23px;
+    font-size: 15px;
+    right: 26%;
+    z-index: 999;
+}
+
+.navdown {
+  background-color: rgb(255 255 255);
+    padding-left: 5px;
+    height: 33px;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 58px;
+    box-shadow: 2px 2px 9px -5px;
+}
+
+div.navdown a {
+  color: black;
+  text-decoration: none;
+  font-size: 1vw;
+  text-align: center;
+  position: relative;
+  padding: 8px;
+  z-index: 0;
+  cursor: pointer;
+  border-right: 1px solid #0000000a;
+}
+
+div.navdown a:hover {
+ background-color: #EEEE;
+ transition: 0.5s;
+}
+
+.labelsort {
+  position: absolute;
+  top: 75px;
+  left: 306px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  color: white;
+}
+

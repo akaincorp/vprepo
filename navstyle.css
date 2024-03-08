@@ -1,0 +1,587 @@
+/* Google Font Import - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.grid-container {
+  position: relative;
+  left: 20px;
+}
+
+.grid-item h3{
+  font-size: 10px;
+}
+
+.grid-item p{
+  font-size: 10px;
+}
+
+.btnContainer {
+  position: relative;
+    width: 68%;
+    top: 72px;
+    height: 37px;
+    right: 61px;
+    z-index: 99;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer2 {
+  position: fixed;
+  width: 100%;
+  bottom: 5px;
+  height: 37px;
+  right: 50px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnContainer3 {
+  position: fixed;
+  width: 165px;
+  bottom: 12px;
+  height: 37px;
+  z-index: 99;
+  left: 268px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#btnDashboard {
+  box-shadow: 0 0 5px black inset;
+    margin: 2px;
+    height: 100%;
+    position: absolute;
+    width: 130px;
+    left: 295px;
+    border: none;
+    background-image: linear-gradient(#dcdedd, white);
+    color: black;
+}
+
+#btnDashboardactive {
+  box-shadow: 0 0 5px black inset;
+    margin: 2px;
+    height: 100%;
+    position: absolute;
+    width: 130px;
+    border: none;
+    left: 295px;
+    background-image: linear-gradient(#a1a1a1, rgb(170, 170, 170));
+    color: black;
+}
+
+#btnOverview {
+  margin: 2px;
+  height: 100%;
+  position: absolute;
+  width: 130px;
+  left: 566px;
+  box-shadow: 0 0 5px black inset;
+    border: none;
+    background-image: linear-gradient(#dcdedd, white);
+    color: black;
+}
+
+#btnOverviewactive {
+  box-shadow: 0 0 5px black inset;
+  margin: 2px;
+    height: 100%;
+    position: absolute;
+    width: 130px;
+    border: none;
+    left: 566px;
+    background-image: linear-gradient(#a1a1a1, rgb(170, 170, 170));
+    color: black;
+}
+
+#btnProduct {
+  margin: 2px;
+  height: 100%;
+  position: absolute;
+  width: 130px;
+  left: 431px;
+  box-shadow: 0 0 5px black inset;
+    border: none;
+    background-image: linear-gradient(#dcdedd, white);
+    color: black;
+}
+
+#btnProductactive {
+  margin: 2px;
+  height: 100%;
+  position: absolute;
+  width: 130px;
+  left: 431px;
+  box-shadow: 0 0 5px black inset;
+  border: none;
+  background-image: linear-gradient(#a1a1a1, rgb(170, 170, 170));
+  color: black;
+}
+
+#btnHandling {
+  margin: 2px;
+  height: 100%;
+  position: absolute;
+  width: 180px;
+  left: 700px;
+  box-shadow: 0 0 5px black inset;
+    border: none;
+    background-image: linear-gradient(#dcdedd, white);
+    color: black;
+}
+
+#btnHandlingactive {
+  margin: 2px;
+  height: 100%;
+  position: absolute;
+  width: 180px;
+  left: 700px;
+  box-shadow: 0 0 5px black inset;
+  border: none;
+  background-image: linear-gradient(#a1a1a1, rgb(170, 170, 170));
+  color: black;
+}
+
+
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 44px;
+  left: 0px;
+  height: 100%;
+  overflow-y: auto;
+  width: 200px;
+  background: #eee;
+  z-index: 100;
+  border-right: 5px solid rgb(153, 153, 153);
+}
+
+.sidebar::-webkit-scrollbar{
+  display: none;
+}
+
+.grid-item {
+  box-shadow: -5px 5px 6px -5px;
+    margin-bottom: 11px;
+    width: 146px;
+    height: 83px;
+    padding: 9px;
+    margin-top: 10px;
+}
+
+
+.sidebar li {
+  height: 38px;
+  list-style: none;
+  border: 3px solid rgb(172, 171, 171);
+  display: flex;
+  align-items: center;
+  background-color: rgba(68, 83, 168, 255);
+}
+
+.sidebar .text {
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 1;
+  color: white;
+  margin-left: 10px;
+}
+
+/* =========================== */
+.sidebar header {
+  position: relative;
+}
+
+.sidebar .menu {
+  margin-top: 10px;
+}
+
+.sidebar li a {
+  list-style: none;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Styling for the first dropdown button */
+
+.navtop {
+  background: linear-gradient(180deg, rgb(167 172 169),rgba(202,204,203,255));
+  width: 100%;
+  height: 44px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+
+.logo {
+  position: absolute;
+  left: 2%;
+  top: 9%;
+}
+
+.logo img {
+  width: 45px;
+  height: 34px;
+}
+
+.navtop-content {
+  background: white;
+  width: 350px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 7%;
+  top: 7px;
+  gap: 10px;
+}
+
+.agent {
+  bottom: 10px;
+  right: 25px;
+  position: relative;
+}
+
+.agent img {
+  width: 20px;
+  height: 22px;
+  position: relative;
+  right: 40px;
+  top: 22px;
+}
+
+.agent h5 {
+  font-size: 12px;
+  position: relative;
+  right: 10px;
+  bottom: 4px;
+}
+
+.idr {
+  bottom: 10px;
+  right: 28px;
+  position: relative;
+}
+
+.idr img {
+  width: 20px;
+  height: 22px;
+  position: relative;
+  right: 8px;
+  top: 22px;
+}
+
+.idr h5 {
+  font-size: 12px;
+  position: relative;
+  left: 18px;
+  bottom: 5px;
+}
+
+.statistic {
+  bottom: 10px;
+  left: 20px;
+  position: relative;
+}
+
+.statistic img {
+  width: 20px;
+  height: 22px;
+  position: relative;
+  right: 23px;
+  top: 22px;
+}
+
+.statistic h5 {
+  font-size: 12px;
+  position: relative;
+  left: 5px;
+  bottom: 4px;
+}
+
+.office {
+  bottom: 10px;
+  left: 50px;
+  position: relative;
+}
+
+.office img {
+  width: 20px;
+  height: 22px;
+  position: relative;
+  right: 20px;
+  top: 21px;
+}
+
+.office h5 {
+  font-size: 12px;
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
+
+.dropdown-container {
+  position: absolute;
+  width: 75px;
+  height: 26px;
+  top: 17%;
+  right: 19%;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  left: 50px;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-list1 {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 24px;
+  top: 35px;
+  height: 28px;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown {
+  display: none; /* Sembunyikan dropdown secara default */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS untuk tautan dropdown */
+.dropdown a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Saat hover pada elemen parent, tampilkan dropdown */
+.dropdown:hover {
+  display: block;
+}
+
+.opstatus {
+  position: relative;
+  bottom: 200px;
+  z-index: 9999;
+  display: none;
+}
+
+.selectstatus1 {
+  margin: 2px;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    left: 478px;
+    background-image: linear-gradient(#d7d7d7, #d7d7d7);
+    box-shadow: -4px 0px 0px 0px white;
+    color: black;
+    border-radius: 4px;
+    bottom: 5px;
+}
+.selectstatussubmit {
+  margin: 2px;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    left: 324px;
+    background-image: linear-gradient(#d7d7d7, #d7d7d7);
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    bottom: 5px;
+}
+
+.selectstatus2 {
+  margin: 2px;
+  height: 100%;
+  position: absolute;
+  width: 150px;
+  left: 786px;
+  background-image: linear-gradient(#d7d7d7, #d7d7d7);
+  box-shadow: -4px 0px 0px 0px white;
+  color: black;
+  border-radius: 4px;
+  bottom: 5px;
+}
+
+.selectstatus3 {
+  margin: 2px;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    left: 632px;
+    background-image: linear-gradient(#d7d7d7, #d7d7d7);
+    box-shadow: -4px 0px 0px 0px white;
+    color: black;
+    border-radius: 4px;
+    bottom: 5px;
+}
+
+.selectstatus4 {
+  margin: 2px;
+  height: 100%;
+  position: absolute;
+  width: 150px;
+  left: 940px;
+  background-image: linear-gradient(#d7d7d7, #d7d7d7);
+  box-shadow: -4px 0px 0px 0px white;
+  color: black;
+  border-radius: 4px;
+  bottom: 5px;
+}
+
+.selectstatusapprove {
+  margin: 2px;
+  height: 37px;
+  width: 150px;
+  background-image: linear-gradient(#d7d7d7, #d7d7d7);
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.clock {
+  width: 221px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  cursor: default;
+  color: white;
+  top: 11px;
+  font-size: 13px;
+  left: 474px;
+}
+
+#clock {
+  width: 100%;
+}
+
+.signal {
+  position: absolute;
+  top: 2px;
+  right: 9%;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textsignal {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.imgsignal {
+  width: 60px;
+  height: 35px;
+}
+
+.signout {
+  width: 5%;
+  height: 70%;
+  position: absolute;
+  right: 4%;
+  top: 12%;
+}
+
+.signout button {
+  width: 100px;
+    height: 100%;
+    border: none;
+    color: red;
+    box-shadow: 0px 2px 2px -1px;
+    font-weight: 700;
+    background-color: rgb(204, 199, 199);
+}
+
+.version {
+  color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 45px;
+    font-size: 15px;
+    background-color: white;
+    left: 2px;
+    z-index: 999;
+    justify-content: center;
+    width: 55px;
+    height: 25px;
+}
+
+.runningtext {
+  background-color: rgb(207, 204, 204);
+    width: 138px;
+    height: 25px;
+    top: 45px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 57px;
+    font-size: 12px;
+    font-weight: 30;
+    color: black;
+    bottom: 14px;
+    z-index: 999;
+}
